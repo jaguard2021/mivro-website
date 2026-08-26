@@ -6,7 +6,6 @@
     <title>Mivro — Solusi Digital & Konsultan Teknologi</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <!-- Mengganti font ke Inter -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <style>
         :root {
@@ -27,7 +26,6 @@
         }
 
         body {
-            /* Menggunakan Inter sebagai font utama */
             font-family: 'Inter', sans-serif;
             min-height: 100vh;
             display: flex;
@@ -43,7 +41,6 @@
             color: var(--text-main);
         }
 
-        /* === ANIMATED BLOBS === */
         .ambient-blob {
             position: fixed;
             border-radius: 50%;
@@ -68,7 +65,6 @@
             z-index: 1;
         }
 
-        /* === MAIN MVP CARD (DARK GLASSMORPHISM) === */
         .mvp-card {
             background: var(--card-bg);
             backdrop-filter: blur(24px);
@@ -78,7 +74,6 @@
             box-shadow: var(--shadow-subtle), 0 0 0 1px var(--border-glass);
         }
 
-        /* === HERO HEADER === */
         .hero-header {
             display: flex;
             align-items: center;
@@ -118,7 +113,6 @@
             max-width: 750px;
         }
 
-        /* === SECTION TITLES === */
         .section-title {
             font-size: 0.85rem;
             text-transform: uppercase;
@@ -128,7 +122,6 @@
             margin-bottom: 16px;
         }
 
-        /* === ECOSYSTEM (MIVROPAY, MIVRORENT, MIVROMICRO) === */
         .ecosystem-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -177,7 +170,6 @@
             line-height: 1.5;
         }
 
-        /* === BENTO GRID SECTION === */
         .bento-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -237,7 +229,6 @@
             display: block;
         }
 
-        /* === LEGAL INFO WRAPPER === */
         .legal-banner {
             background: rgba(15, 23, 42, 0.6);
             border-radius: 20px;
@@ -264,7 +255,6 @@
             margin-top: 2px;
         }
 
-        /* === ACTION CTA BUTTONS === */
         .cta-group {
             display: flex;
             gap: 12px;
@@ -309,7 +299,6 @@
             border-color: rgba(255, 255, 255, 0.2);
         }
 
-        /* === FOOTER === */
         .footer {
             display: flex;
             justify-content: space-between;
@@ -331,7 +320,6 @@
             text-decoration: underline;
         }
 
-        /* === RESPONSIVE DESIGN === */
         @media (max-width: 768px) {
             .mvp-card { padding: 28px 20px; border-radius: 24px; }
             .hero-header { flex-direction: column; align-items: flex-start; gap: 16px; }
@@ -346,16 +334,13 @@
 </head>
 <body>
 
-    <!-- Ambient Floating Background Blur -->
     <div class="ambient-blob blob-1"></div>
     <div class="ambient-blob blob-2"></div>
 
     <div class="container">
         <div class="mvp-card">
 
-            <!-- Hero Section -->
             <div class="hero-header">
-                <!-- LOGO ASLI MIVRO -->
                 <img src="logo.png" alt="Logo Mivro" class="logo-img" />
                 <div class="hero-title">
                     <h1>Mivro<span>.</span></h1>
@@ -366,7 +351,6 @@
                 Mivro berfokus pada pembangunan infrastruktur perangkat lunak tingkat lanjut, integrasi arsitektur API berskala enterprise, dan penyusunan strategi pertumbuhan digital untuk perusahaan modern.
             </p>
 
-            <!-- Ekosistem Layanan (MivroPay, MivroRent, MivroMicro) -->
             <div class="section-title">Ekosistem & Lini Bisnis</div>
             <div class="ecosystem-grid">
                 <div class="ecosystem-card">
@@ -386,7 +370,6 @@
                 </div>
             </div>
 
-            <!-- Bento Info Grid -->
             <div class="section-title">Informasi & Kontak Layanan</div>
             <div class="bento-grid">
                 <div class="bento-item">
@@ -419,7 +402,6 @@
                 </div>
             </div>
 
-            <!-- Legal Banner Grid -->
             <div class="section-title">Legalitas Badan Usaha</div>
             <div class="legal-banner">
                 <div class="legal-col">
@@ -440,7 +422,6 @@
                 </div>
             </div>
 
-            <!-- Action Buttons -->
             <div class="cta-group">
                 <a href="mailto:Mivroonline@gmail.com" class="btn btn-primary">
                     <span>Kirim Pesan Email</span>
@@ -451,11 +432,13 @@
                 </a>
             </div>
 
-            <!-- Footer -->
+            <!-- FOOTER DENGAN 3 LINK -->
             <div class="footer">
                 <span>&copy; 2026 Mivro. All rights reserved.</span>
                 <span>
                     <a href="https://mivro.online/privacy-policy">Kebijakan Privasi</a>
+                    &nbsp;|&nbsp;
+                    <a href="https://mivro.online/data-deletion">Penghapusan Data</a>
                     &nbsp;|&nbsp;
                     <span>Official Business Profile</span>
                 </span>
