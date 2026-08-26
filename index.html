@@ -320,6 +320,17 @@
             color: var(--text-muted);
         }
 
+        .footer a {
+            color: var(--text-muted);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        .footer a:hover {
+            color: var(--primary);
+            text-decoration: underline;
+        }
+
         /* === RESPONSIVE DESIGN === */
         @media (max-width: 768px) {
             .mvp-card { padding: 28px 20px; border-radius: 24px; }
@@ -443,7 +454,11 @@
             <!-- Footer -->
             <div class="footer">
                 <span>&copy; 2026 Mivro. All rights reserved.</span>
-                <span>Official Business Profile</span>
+                <span>
+                    <a href="https://mivro.online/privacy-policy">Kebijakan Privasi</a>
+                    &nbsp;|&nbsp;
+                    <span>Official Business Profile</span>
+                </span>
             </div>
 
         </div>
